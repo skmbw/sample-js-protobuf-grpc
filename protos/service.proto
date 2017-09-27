@@ -1,0 +1,9 @@
+import public "message.proto";
+
+syntax = "proto3";
+
+package myapp;
+
+service MyApp {
+  rpc ListMessages (Int32Id) returns (MessageList);
+}
